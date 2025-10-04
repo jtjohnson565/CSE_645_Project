@@ -2,7 +2,7 @@
 #SBATCH --job-name=baseline_prompts
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
-#SBATCH --time=00:15:00
+#SBATCH --time=03:00:00
 #SBATCH --output=baseline_prompts_output.log
 #SBATCH --error=baseline_prompts_error.log
 
