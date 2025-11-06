@@ -1,0 +1,3 @@
+# Log and JSONL Files
+*.log
+*.jsonl

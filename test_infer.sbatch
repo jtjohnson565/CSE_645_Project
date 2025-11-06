@@ -7,7 +7,8 @@
 #SBATCH --error=test_infer_error.log
 
 # Activate your venv directly
-source /home/v0kanu01/.conda/envs/qlora_env/lib/python3.10/venv/scripts/common/activate
+module load miniforge3/24.3.0-0-gcc-11.5.0-wkw4vym
+conda activate qlora_env
 
 # Run inference
-python test_model.py
+srun python test_model.py

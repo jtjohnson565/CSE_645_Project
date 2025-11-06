@@ -1,9 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=qlora_train
 #SBATCH --output=qlora_output.log
-#SBATCH --time=08:00:00
+#SBATCH --error=qlora_error.log
+#SBATCH --time=05:00:00
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:2
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --mem=32GB
