@@ -4,12 +4,12 @@ if __name__ == "__main__":
     # Load PubMedQA
     train_dataset = load_dataset("qiaojin/PubMedQA", "pqa_unlabeled", split = "train[:85%]")
     test_dataset = load_dataset("qiaojin/PubMedQA", "pqa_unlabeled", split = "train[-15%:]")
-    sft_dataset = load_dataset("qiaojin/PubMedQA", "pqa_labeled", split = "train")
+    labeled_dataset = load_dataset("qiaojin/PubMedQA", "pqa_labeled", split = "train")
     
     def preprocess(example, has_label = False):
-        data_dict = {"context": ' '.join(example['context']['contexts']),
-                     "question": example['question'],
-                     "answer": example['long_answer']}
+        data_dict = {"instruction": example['question'],
+                     "context": ' '.join(example['context']['contexts']),
+                     "response": example['long_answer']}
         
         if has_label == True:
             data_dict["label"] = example['final_decision']
@@ -18,10 +18,14 @@ if __name__ == "__main__":
 
     train_dataset = train_dataset.map(preprocess, remove_columns = ['pubid', 'long_answer'])
     test_dataset = test_dataset.map(preprocess, remove_columns = ['pubid', 'long_answer'])
-    sft_dataset = sft_dataset.map(lambda example: preprocess(example, has_label = True), remove_columns = ['pubid', 'long_answer'])
+    labeled_dataset = labeled_dataset.map(lambda example: preprocess(example, has_label = True), remove_columns = ['pubid', 'long_answer'])
     
-    train_dataset.to_json("train_processed.jsonl", orient = "records", lines = True)
-    test_dataset.to_json("test_processed.jsonl", orient = "records", lines = True)
-    sft_dataset.to_json("sft_processed.jsonl", orient = "records", lines = True)
-    
-    print("Preprocessing complete. Saved to train_processed.jsonl, test_processed.jsonl, and sft_processed.jsonl")
+    train_dataset.to_json("json_datasets/train_preprocessed.jsonl", orient = "records", lines = True)
+    test_dataset.to_json("json_datasets/test_preprocessed.jsonl", orient = "records", lines = True)
+    labeled_dataset.to_json("json_datasets/labeled_preprocessed.jsonl", orient = "records", lines = True)
+
+    print("Number of Rows in Training Dataset:", len(train_dataset))
+    print("Number of Rows in Testing Dataset:", len(test_dataset))
+    print("Number of Rows in Labeled Dataset:", len(labeled_dataset))
+
+    print("Preprocessing complete. Saved train_preprocessed.jsonl, test_preprocessed.jsonl, and labeled_preprocessed.jsonl to json_datasets directory.")
