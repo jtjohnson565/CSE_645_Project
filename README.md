@@ -24,3 +24,21 @@ conda env config vars set HF_TOKEN={HuggingFace Token}
 conda env config vars set OPENAI_API_KEY={Open AI Token}
 ```
 Exit and login again to cluster to folder to run chosen batch scripts
+
+### Batch Script Commands (Run in CSE_645_Project Directory)
+Preprocessing Dataset:
+```
+sbatch baseline_prompts.sbatch
+```
+Fine-Tuning using QLoRA:
+```
+sbatch train_qlora.sbatch {epochs} {rank} {alpha} {bottom n out of 32 decoder blocks excluded from QLoRA injection}
+```
+Baseline Inferencing:
+```
+sbatch baseline_prompts.sbatch
+```
+Fine-Tuned Inferencing:
+```
+sbatch test_infer.sbatch {model job id} {checkpoint step} {evaluation model name}
+```
