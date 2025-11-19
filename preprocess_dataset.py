@@ -7,9 +7,9 @@ if __name__ == "__main__":
     labeled_dataset = load_dataset("qiaojin/PubMedQA", "pqa_labeled", split = "train")
     
     def preprocess(example, has_label = False):
-        data_dict = {"instruction": example['question'],
-                     "context": ' '.join(example['context']['contexts']),
-                     "response": example['long_answer']}
+        data_dict = {"context": ' '.join(example['context']['contexts']),
+                     "question": example['question'],
+                     "answer": example['long_answer']}
         
         if has_label == True:
             data_dict["label"] = example['final_decision']
