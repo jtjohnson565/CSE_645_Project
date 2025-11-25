@@ -1,0 +1,2 @@
+real_checkpoints/** filter=lfs diff=lfs merge=lfs -text
+synthetic_checkpoints/** filter=lfs diff=lfs merge=lfs -text

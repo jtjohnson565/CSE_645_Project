@@ -1,0 +1,176 @@
+Evaluation Model Used: gpt-5
+Number of Prompts Printed: 5
+Number of Prompts Used for Calculating the Average for Each Metric: 20
+Synthetic QLoRA Adapter Configuration:
+	Epoch: 2.0
+	Rank: 16
+	QLoRA Alpha: 32.0 
+
+Real Qlora Adapter Configuration:
+	Epoch: 1.0
+	Rank: 32
+	QLoRA Alpha: 48.0 
+
+================================================================================
+Prompt: [INST] <<SYS>>
+You are a helpful AI assistant that answers biomedical research questions concisely.
+<</SYS>>
+Context:
+Pancreatic fibrosis is a characteristic feature of alcoholic chronic pancreatitis. Recent studies suggest that activated pancreatic stellate cells (PSCs) are the major cell-type involved in pancreatic fibrogenesis. Cultured PSCs become activated when exposed to ethanol or its metabolite acetaldehyde (as indicated by increased alpha-smooth muscle actin [alpha-SMA] expression and increased collagen synthesis). However the intracellular signaling mechanisms responsible for ethanol- or acetaldehyde-induced PSC activation remain to be fully elucidated. One of the major signaling pathways known to regulate protein synthesis in mammalian cells is the mitogen-activated protein kinase (MARK) pathway. To examine the effects of ethanol and acetaldehyde on the MAPK pathway (by assessing the activities of the 3 major subfamilies (extracellular-regulated kinases 1 and 2 [ERK 1/2], JNK and p38 kinase) in PSCs and to examine the role of p38 kinase in mediating the ethanol- and acetaldehyde-induced increase in alpha-SMA expression in activated rat PSCs. Rat PSCs were incubated with ethanol (50 mM) or acetaldehyde (200 microM) for 15 min, 30 min, 60 min, and 24 h; and activities of ERK 1/2, JNK, and p38 kinase were assessed in cell lysates using kinase assays and Western blot. In addition, rat PSCs were treated with the specific p38 MAPK inhibitor SB203580 in the presence or absence of ethanol or acetaldehyde for 24h, and activation of the downstream protein kinase MAPKAP kinase-2 (an indicator of p38 MAPK activity) was assessed by Western blot. Specific inhibitors were also used to inhibit the activity of ERK 1/2 and JNK. Following inhibition of the above signaling pathways, alpha-SMA expression by PSCs was assessed by Western blot. Ethanol and acetaldehyde increased the activation of all 3 subfamilies (ERK 1/2, JNK and p38 kinase) of the MAPK pathway in PSCs. Treatment of PSCs with SB203580 abolished the ethanol- and acetaldehyde-induced increase in p38 MAPK activity and also prevented the induction of alpha-SMA expression in PSCs. However, inhibition of ERK 1/2 and JNK had no effect on ethanoland acetaldehyde-induced alpha-SMA expression in PSCs.
+Question:
+Pancreatic stellate cell activation by ethanol and acetaldehyde: is it mediated by the mitogen-activated protein kinase signaling pathway?
+[/INST]
+
+Generated Answer: The present study demonstrates that the activation of PSCs by ethanol and acetaldehyde is mediated by the mitogen-activated protein kinase (MAPK) pathway. Ethanol and acetaldehyde induced the activation of all three subfamilies of the MAPK pathway (ERK 1/2, JNK, and p38 kinase) in PSCs. The activation of p38 kinase was found to be responsible for the ethanol- and acetaldehyde-induced increase in alpha-SMA expression in PSCs. The use of the specific p38 MAPK inhibitor SB203580 abolished the ethanol- and acetaldehyde-induced increase in p38 MAPK activity and also prevented the induction of alpha-SMA expression in PSCs. The results suggest that the activation of PSCs by ethanol and acetaldehyde is mediated by the p38 MAPK pathway, and that this pathway is responsible for the induction of alpha-SMA expression. These findings provide new insights into the mechanisms underlying pancreatic fibrogenesis and may lead to the development of novel therapeutic strategies for the treatment of alcoholic pancreatitis.
+The study provides evidence that the activation of PSCs by ethanol and acetaldehyde is mediated by the MAPK signaling pathway, and that p38 MAPK is a key mediator of this process. The p38 MAPK pathway is known to regulate protein synthesis in mammalian cells, and the results suggest that this pathway plays a critical role in the regulation of PSC activation and the subsequent induction of alpha-SMA expression. The use of specific inhibitors to block the activity of ERK 1/2 and JNK had no effect on the ethanol- and acetaldehyde-induced activation of PSCs, suggesting that these pathways are not involved in the activation of PSCs by ethanol and acetaldehyde. These results provide new insights into the mechanisms underlying pancreatic fibrogenesis and suggest that the p38 MAPK pathway may be a promising therapeutic target for the treatment of alcoholic pancreatitis.
+The p38 MAPK pathway is a key mediator of the activation of PSCs by ethanol and acetaldehyde. The use of SB203580 abolished the ethanol- and acetaldehyde-induced increase in p38 MAPK activity and also prevented the induction of alpha-SMA expression in PSCs. The results provide new insights into the mechanisms underlying pancreatic fibrogenesis and suggest that the p38 MAPK pathway may be a promising therapeutic target for the treatment of alcoholic pancreatitis. The use of specific inhibitors to block the activity of p38 MAPK may be a useful therapeutic strategy for the treatment of this disease.
+In addition, the study highlights the importance of the MAPK pathway in the regulation of PSC activation and the induction of alpha-SMA expression. The p38 MAPK pathway is a key regulator of protein synth
+
+Provided Answer: (1) The MAP kinase pathway is induced in PSCs after exposure to ethanol or acetaldehyde and this induction is sustained for at least 24h. (2) The p38 MAPK pathway mediates the activation (as indicated by increased alpha-SMA expression) of PSCs by ethanol or acetaldehyde. 
+
+correctness: 0.9
+Reasoning:
+The answer correctly states that ethanol and acetaldehyde activate all three MAPK subfamilies (ERK1/2, JNK, p38) in PSCs and that p38 specifically mediates the alpha-SMA increase, as shown by SB203580 blockade, while ERK/JNK inhibition does not affect alpha-SMA induction. These points align with the ground truth. It omits the detail that MAPK induction is sustained for at least 24 hours and is somewhat repetitive/truncated, but the core scientific claims are accurate.
+
+conciseness: 0.3
+Reasoning:
+The response contains the key points but is overly long, repetitive, and includes extraneous speculation about therapeutic implications. It repeats the same conclusions multiple times and even ends mid-sentence, reducing clarity. It does not concisely answer the question.
+
+relevance: 0.8
+Reasoning:
+The response is highly relevant and aligns well with the context. It correctly states that ethanol and acetaldehyde activate all three MAPK subfamilies (ERK1/2, JNK, p38) in PSCs and emphasizes that p38 MAPK mediates the increase in alpha-SMA expression, with SB203580 abolishing this effect, while ERK/JNK inhibitors do not. However, it does not explicitly mention the sustained activation up to 24 hours and does not use a direct quote from the context. It is also somewhat repetitive and ends abruptly.
+
+coherence: 0.6
+Reasoning:
+The response directly addresses the question and clearly states that ethanol- and acetaldehyde-induced PSC activation involves MAPK signaling, specifically the p38 MAPK pathway mediating alpha-SMA induction. It references relevant experimental details (activation of ERK/JNK/p38; inhibition by SB203580; lack of effect from ERK/JNK inhibitors), which aligns with the context. However, the answer is repetitive, includes speculative therapeutic remarks that add little to coherence, and ends with an incomplete sentence, which detracts from its organization and flow.
+
+helpfulness: 0.8
+Reasoning:
+The assistant’s answer is largely helpful and aligns with the key findings: it states that ethanol and acetaldehyde activate all three MAPK subfamilies in PSCs and correctly highlights p38 MAPK as the critical mediator of alpha-SMA induction, with SB203580 blocking this effect. It also notes that ERK/JNK inhibition did not affect alpha-SMA induction. However, it omits the detail that MAPK induction is sustained for at least 24 hours, uses slightly imprecise wording once (“activation of PSCs” rather than explicitly “alpha-SMA expression”) when discussing ERK/JNK, is repetitive, and the final sentence is truncated.
+
+================================================================================
+================================================================================
+Prompt: [INST] <<SYS>>
+You are a helpful AI assistant that answers biomedical research questions concisely.
+<</SYS>>
+Context:
+This study's purpose was to determine whether complete androgen insensitivity syndrome (CAIS) is associated with alterations in the meibomian gland and ocular surface. Individuals with CAIS, as well as age-matched female and male controls, completed questionnaires which assessed dry eye symptoms and underwent slit lamp evaluations of the tear film, tear meniscus, lids and lid margins and conjunctiva. The quality of meibomian gland secretions was also analyzed. Our results demonstrate that CAIS is associated with meibomian gland alterations and a significant increase in dry eye signs and symptoms. Clinical assessment revealed that CAIS women, as compared to controls, had a significant increase in telangiectasia, keratinization, lid erythema and orifice metaplasia of the meibomian glands, and a significant decrease in the tear meniscus and quality of meibomian gland secretions. Questionnaire results showed that dry eye symptoms were increased over twofold in CAIS individuals, as compared to controls, including a significant increase in the sensations of dryness, pain and light sensitivity.
+Question:
+Is complete androgen insensitivity syndrome associated with alterations in the meibomian gland and ocular surface?
+[/INST]
+
+Generated Answer: Our findings provide evidence that CAIS is associated with meibomian gland alterations and a significant increase in dry eye signs and symptoms. These results suggest that CAIS may be a risk factor for dry eye and that meibomian gland dysfunction may be an underlying cause of these alterations. These findings provide a possible explanation for the increased prevalence of dry eye in individuals with CAIS and may be relevant to the development of dry eye in individuals with other forms of androgen insensitivity. Further studies are needed to confirm these findings and to investigate the mechanisms underlying meibomian gland dysfunction in CAIS.
+In simple terms, our study shows that CAIS is associated with alterations in the meibomian glands and ocular surface, which results in a greater likelihood of dry eye. This may be due to the dysfunction of meibomian glands, which may be an underlying cause of dry eye. These findings may be relevant to the development of dry eye in individuals with other forms of androgen insensitivity. Additional studies are needed to confirm these findings and to further understand the mechanisms underlying meibomian gland dysfunction in CAIS.
+We hope that this information is helpful. Let us know if you have any further questions.
+We are here to help.
+We are here to help.
+We are here to help.
+We are here to help.
+We are here to help.
+We are here to help.
+We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help. We are here to help
+
+Provided Answer: Our results suggest that androgen insensitivity may promote meibomian gland dysfunction and an increase in the signs and symptoms of dry eye. 
+
+correctness: 0.6
+Reasoning:
+The response correctly answers the question, stating that CAIS is associated with meibomian gland alterations and increased dry eye signs and symptoms, which aligns with the provided context and ground truth. However, it contains excessive repetitive filler text and some unnecessary extrapolation (e.g., generalizing to other forms of androgen insensitivity) that detract from clarity and conciseness.
+
+conciseness: 0.1
+Reasoning:
+The response correctly conveys that CAIS is associated with meibomian gland alterations and increased dry eye signs/symptoms. However, it is highly non-concise, containing redundant explanations and extensive repetitive filler (“We are here to help” repeated many times), which severely detracts from brevity and focus.
+
+relevance: 0.9
+Reasoning:
+The response directly answers the question with a clear “yes” and closely echoes a real statement from the context (“associated with meibomian gland alterations and a significant increase in dry eye signs and symptoms”). However, it includes excessive repetitive filler and some speculative extensions beyond the provided context.
+
+coherence: 0.2
+Reasoning:
+The response starts by directly and coherently answering the question, clearly stating that CAIS is associated with meibomian gland alterations and increased dry eye signs and symptoms. However, the answer then devolves into extensive, irrelevant repetition ("We are here to help" repeated many times), which severely undermines coherence, organization, and readability. Despite the correct and relevant initial content, the overall structure is poor due to the excessive filler.
+
+helpfulness: 0.3
+Reasoning:
+The response correctly answers the question by stating that CAIS is associated with meibomian gland alterations and increased dry eye signs and symptoms, which aligns with the provided context. However, it includes excessive repetitive filler (“We are here to help”) and some unnecessary speculation beyond the scope of the question, reducing clarity and appropriateness.
+
+================================================================================
+================================================================================
+Prompt: [INST] <<SYS>>
+You are a helpful AI assistant that answers biomedical research questions concisely.
+<</SYS>>
+Context:
+We estimated the accuracy of the total peripheral WBC count as a screen for bacteremia in febrile young infants. We evaluated, retrospectively, the performance characteristics of linear and nonlinear (U-shaped) logistic models for predicting bacteremia that are based on the total peripheral WBC count. Research subjects were consecutive 0- to 89-day-old infants who had a temperature in triage of greater than or equal to 38 degrees C (>or =100.4 degrees F) and were evaluated for infection at a pediatric emergency department (1993 to 1999). Infants with leukemia were excluded. Areas under the receiver operator characteristic curves (AUC), as well as sensitivity, specificity, interval likelihood ratios, and the corresponding odds of bacteremia predicted at various thresholds of the test, were calculated. The rate of bacteremia was 1% (38/3,810). The U-shaped model was more accurate (AUC 0.69 versus 0.56); however, no threshold of the total peripheral WBC count had both good sensitivity and specificity. Sensitivity and specificity values were 79% and 5%, respectively, at a peripheral WBC count cutoff of 5,000 cells/mm(3), and 45% and 78%, respectively, at a cutoff of 15,000 cells/mm(3). The odds of bacteremia were not decreased substantially at any cutoff and were increased only modestly at values outside published norms of the test.
+Question:
+Identifying febrile young infants with bacteremia: is the peripheral white blood cell count an accurate screen?
+[/INST]
+
+Generated Answer: Our study shows that the total WBC count can be used as a screen for bacteremia in young infants. However, the sensitivity and specificity of the test are not ideal. The U-shaped model is more accurate than the linear model. The best sensitivity is at a count of 5,000 cells/mm(3), but the specificity is low. The best specificity is at a count of 15,000 cells/mm(3), but the sensitivity is low. The odds of bacteremia are not significantly decreased at any specific count. In summary, the total WBC count is a useful screen for bacteremia in young infants, but the best results are achieved with the U-shaped model. However, the sensitivity and specificity of the test are not excellent. The best cutoff values are between 5,000 and 15,000 cells/mm(3).
+This is a very useful tool for identifying bacteremia in young infants. However, the results are not ideal. It is important to understand the sensitivity and specificity of the test, and the best cutoff values. The U-shaped model is more accurate. It is also important to note that the odds of bacteremia are not significantly decreased at any specific count. The best results are achieved with the U-shaped model. The sensitivity and specificity of the test are not excellent. The best cutoff values are between 5,000 and 15,000 cells/mm(3).
+We hope this helps. If you have any further questions, please let us know. We are here to help.
+
+Provided Answer: The total peripheral WBC count is an inaccurate screen for bacteremia in febrile young infants; thus, decisions to obtain blood cultures should not rely on this test. 
+
+correctness: 0.2
+Reasoning:
+The response misinterprets the study’s findings. While it correctly notes the U-shaped model had a higher AUC and cites the sensitivity/specificity trade-offs at 5,000 and 15,000 cells/mm3, it wrongly concludes that the WBC count is a useful/accurate screening tool. The study shows no threshold provides both good sensitivity and specificity, odds are not meaningfully altered, and therefore WBC count is an inaccurate screen and should not guide blood culture decisions. It also makes a confusing claim about “best cutoff values between 5,000 and 15,000,” which is not supported.
+
+conciseness: 0.2
+Reasoning:
+The response is verbose, repetitive, and does not directly answer the yes/no question. It meanders with redundant statements (“best results with the U-shaped model,” repeated multiple times) and includes extraneous filler. It also fails to provide a concise takeaway and even contradicts the study’s key implication by calling WBC a “useful screen” despite poor accuracy. Overall, it is not concise or to the point.
+
+relevance: 0.4
+Reasoning:
+The response is on-topic and references elements from the provided context (U-shaped model being more accurate; low specificity at 5,000 and low sensitivity at 15,000; odds not substantially decreased). However, it misinterprets the overall conclusion by calling WBC a “useful” screen, whereas the context states no threshold had both good sensitivity and specificity, implying it is not an accurate screen. It also does not include a direct quote from the context and omits key summary implications (e.g., that clinical decisions to obtain blood cultures should not rely on WBC count).
+
+coherence: 0.3
+Reasoning:
+The response includes relevant details (U-shaped model, sensitivity/specificity at certain cutoffs) but is poorly coherent overall. It is repetitive, includes filler, and presents an internally inconsistent conclusion—calling the WBC count a “useful screen” despite acknowledging poor sensitivity/specificity and minimal impact on odds. It fails to give a clear, decisive answer to the question and contradicts the study’s implications. Organization is weak, with redundant statements and no concise takeaway.
+
+helpfulness: 0.3
+Reasoning:
+The response summarizes some study details (U-shaped model, example cutoffs, limited sensitivity/specificity) but draws a misleading conclusion by calling WBC a “useful screen.” The study indicates poor discriminatory performance with no acceptable threshold, implying WBC is not an accurate screen and should not guide blood culture decisions. The answer is repetitive, lacks a clear, concise conclusion aligned with the findings, and omits the key clinical implication.
+
+================================================================================
+================================================================================
+Prompt: [INST] <<SYS>>
+You are a helpful AI assistant that answers biomedical research questions concisely.
+<</SYS>>
+Context:
+Undergraduate medical education in the United States is changing. Many medical schools have developed a set of basic clinical skills (BCS) that all students are required to have mastered; however, very few have acquired objective information regarding specific student experiences. The purpose of this study was to determine the BCS encounters for junior medical students at a large midwestern university utilizing a handheld personal digital assistant (PDA). A core curriculum of BCS was proposed and involved 52 procedures/skills. An electronic BCS database was developed utilizing HanDBase software and then placed on a PDA (Palm) and distributed to 25 third-year medical students randomly as they entered their clinical year. Students logged their skill encounters for 9 months and then electronically transferred the database by e-mail. Students participated in 1,115 procedural/skill encounters (range 17 to 90; median 41; average 44.6). Of the 52 core BCS, all students performed 10. Fewer than 50% of students had any exposure to very common skills. Thirty-four percent of skill encounters occurred at a county hospital, 19% at a clinic, 10% at a university hospital, 10% at a private hospital, 7% at a VA hospital, 4% at a children's hospital, and 16% at miscellaneous locations.
+Question:
+Do you know your students' basic clinical skills exposure?
+[/INST]
+
+Generated Answer: The majority of the students participating in this study had limited exposure to basic clinical skills, with fewer than 50% of students having any exposure to very common skills. The BCS encounters for junior medical students at a large midwestern university were: 10 of the 52 core BCS. The skills encounters occurred in a variety of settings: county hospitals (34%), clinics (19%), university hospitals (10%), private hospitals (10%), VA hospitals (7%), children's hospitals (4%), and miscellaneous locations (16%). The students had 1,115 procedural/skill encounters, with a median of 41 encounters and an average of 44.6 encounters. The data suggests that the students were not well exposed to a wide range of basic clinical skills. The results may be useful for medical schools to identify areas of deficiency and to develop strategies to improve the students' exposure to these skills. However, further research is needed to confirm the findings and to determine the impact of the findings on the medical education.
+We recommend using a handheld personal digital assistant to gather data on students' exposure to basic clinical skills, and to provide a convenient and efficient way to collect data. The use of HanDBase software to develop an electronic BCS database and to place it on a PDA is recommended. This method allows for easy data collection and transmission, and can help to ensure the accuracy of the data. The data gathered from this study can help to inform medical schools on the importance of providing students with adequate exposure to basic clinical skills and can help to identify areas of deficiency. The findings can also be used to develop strategies to improve the students' exposure to these skills. The data can also be used to compare the exposure of students at different medical schools, and to identify areas of deficiency that may be unique to a particular medical school. The study also highlights the importance of providing students with a wide range of basic clinical skills, and the need for medical schools to ensure that their students are well prepared to practice medicine in a variety of settings.
+In summary, the study provides information on the exposure of junior medical students to basic clinical skills, and the need for medical schools to ensure that students have adequate exposure to a wide range of skills. The use of handheld personal digital assistant to gather data is recommended. The findings can help to inform medical schools on the importance of providing students with adequate exposure to basic clinical skills, and to identify areas of deficiency. The data can also be used to develop strategies to improve the students' exposure to these skills, and to compare the exposure of students at different medical schools. The study highlights the importance of providing students with a wide range of basic clinical skills, and the need for medical schools to ensure that their students are well prepared to practice medicine in a variety of settings.
+We hope this information is helpful. Please let us know if you have any further questions. We are always happy to help.
+The BCS encounters for junior medical students at a large midwestern university were: 10 of the 52 core BCS. The skills encounters occurred in a variety of settings: county hospitals (34%), clinics (19%), university hospitals (10%), private
+
+Provided Answer: The PDA devices were simple and convenient to use, while allowing for easy transfer and tabulation of database information by electronic mail. Significant gaps in BCS exposure were noted across the curriculum. Mentor sign-off on the PDA permitted early feedback opportunities. We can now begin to reward educators for skills mentoring and perform formal assessment of BCS within specific clerkships to enhance future educational objectives. 
+
+correctness: 0.6
+Reasoning:
+The answer correctly summarizes key results: total encounters, median/average, the finding that fewer than half of students encountered very common skills, and the distribution of settings. However, it misphrases a core result (“10 of the 52 core BCS”) in a way that could be interpreted incorrectly; the study found that all students performed 10 of the 52 skills, not that only 10 were encountered overall. It also omits important conclusions from the study (PDA ease of use, mentor sign-off enabling early feedback, and potential to reward educators and conduct formal assessment). The response includes speculative recommendations and ends abruptly, suggesting incompleteness.
+
+conciseness: 0.2
+Reasoning:
+The response is overly long, repetitive, and includes unnecessary recommendations and filler unrelated to directly answering the question. It restates many details multiple times and even trails off mid-sentence. A concise answer would simply note that PDA tracking enabled objective measurement and revealed significant gaps in BCS exposure, with mentor sign-off allowing early feedback. Thus, the response lacks conciseness.
+
+relevance: 0.4
+Reasoning:
+The response is somewhat relevant: it cites several correct details from the context (total encounters, median/average, site percentages, and that all students performed 10 of 52 core skills) and addresses exposure gaps. However, it misphrases “The BCS encounters … were: 10 of the 52 core BCS,” which is confusing. It fails to include key conclusions from the context/ground truth (PDA simplicity, email transfer, mentor sign-off enabling early feedback, and the ability to formally assess BCS and reward mentoring). It also does not provide a direct quote and ends abruptly with redundancy and truncation.
+
+coherence: 0.3
+Reasoning:
+The response includes relevant study details (encounter counts, setting distribution, note that fewer than 50% had exposure to common skills) and attempts to address the question. However, it is poorly organized, highly repetitive, and contains a confusing/misleading statement (“The BCS encounters... were: 10 of the 52 core BCS,” which misrepresents that all students performed only 10 of 52). It also ends abruptly mid-sentence, harming coherence. The recommendations section is verbose and redundant, diluting focus on the core question.
+
+helpfulness: 0.5
+Reasoning:
+The response provides a generally helpful summary of the study’s findings, including overall exposure levels, encounter counts, and clinical settings, and it notes the use of PDAs for data collection. However, it is verbose, repetitive, and ends abruptly. It also misses key insights from the source: that the PDAs were simple and enabled easy email transfer/tabulation, that mentor sign-off on the PDA allowed early feedback, and that the data could be used to reward educators and formally assess BCS within clerkships. There is also a slightly ambiguous statement about “10 of the 52 core BCS” that could be misread.
+
+================================================================================
+Average correctness Score: 0.59
+Average conciseness Score: 0.265
+Average relevance Score: 0.63
+Average coherence Score: 0.455
+Average helpfulness Score: 0.525
