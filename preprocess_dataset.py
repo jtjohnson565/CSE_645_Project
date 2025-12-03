@@ -2,7 +2,6 @@ from datasets import load_dataset
 
 
 def build_context_with_subheadings(contexts, headings=None, max_chunks=None):
-    # contexts can be list[str] or str
     if isinstance(contexts, str):
         return contexts.strip()
 
@@ -27,8 +26,7 @@ def build_context_with_subheadings(contexts, headings=None, max_chunks=None):
 
 
 def preprocess(example, has_label=False):
-    # PubMedQA context is a dict like: {"contexts":[...], "labels":[...]}
-    ctx_obj = example["context"]
+    ctx_obj = example["context"]  # {"contexts":[...], "labels":[...]}
     contexts = ctx_obj.get("contexts", [])
     headings = ctx_obj.get("labels") or ctx_obj.get("headings") or ctx_obj.get("subheadings") or None
 
@@ -37,7 +35,7 @@ def preprocess(example, has_label=False):
     ctx_2 = build_context_with_subheadings(contexts, headings, max_chunks=2)
 
     data_dict = {
-        "context": ctx_all,          # keep old key stable
+        "context": ctx_all,          # backward compatible
         "context_all": ctx_all,
         "context_1": ctx_1,
         "context_2": ctx_2,
@@ -67,7 +65,7 @@ if __name__ == "__main__":
     test_dataset.to_json("json_datasets/test_preprocessed.jsonl", orient="records", lines=True)
     labeled_dataset.to_json("json_datasets/labeled_preprocessed.jsonl", orient="records", lines=True)
 
+    print("Preprocessing complete. Saved JSONL files to json_datasets/.")
     print("Number of Rows in Training Dataset:", len(train_dataset))
     print("Number of Rows in Testing Dataset:", len(test_dataset))
     print("Number of Rows in Labeled Dataset:", len(labeled_dataset))
-    print("Preprocessing complete. Saved JSONL files to json_datasets/.")
