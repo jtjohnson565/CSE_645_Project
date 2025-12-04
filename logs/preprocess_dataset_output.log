@@ -1,4 +1,6 @@
-Number of Rows in Training Dataset: 52062
-Number of Rows in Testing Dataset: 9187
+Number of Rows in Real Training Dataset: 48999
+Number of Rows in Synthetic Training Dataset: 211269
+Number of Rows in Validation Dataset: 6125
+Number of Rows in Testing Dataset: 6125
 Number of Rows in Labeled Dataset: 1000
-Preprocessing complete. Saved train_preprocessed.jsonl, test_preprocessed.jsonl, and labeled_preprocessed.jsonl to json_datasets directory.
+Preprocessing complete. Saved to json_datasets directory.

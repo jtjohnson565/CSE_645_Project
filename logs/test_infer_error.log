@@ -1,5 +1,0 @@
-Skipping import of cpp extensions due to incompatible torch version 2.8.0+cu128 for torchao version 0.14.1             Please see https://github.com/pytorch/ao/issues/2919 for more info
-Device set to use cuda:0
-/home/jtjohn26/CSE_645_Project/test_model.py:42: LangChainDeprecationWarning: The class `ChatOpenAI` was deprecated in LangChain 0.0.10 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-openai package and should be used instead. To use it run `pip install -U :class:`~langchain-openai` and import as `from :class:`~langchain_openai import ChatOpenAI``.
-  eval_llm = ChatOpenAI(model_name = eval_model_name, temperature = 1.0)
-You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
